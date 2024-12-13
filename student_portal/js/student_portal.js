@@ -47,7 +47,7 @@ $(window).on('message', function (e)
         {
             $('#req-modal').modal('show')
             $('.apply-title').html(data.title)
-            $('.apply-type').html('New Applicant')
+            $('.apply-type').html('Renewal')
             $('.req-list').empty()
 
             let reqList = $('.req-list')

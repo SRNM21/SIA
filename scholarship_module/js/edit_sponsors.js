@@ -1,5 +1,5 @@
 import '/vendor/jq.js';
-import { getQuery } from '../js/util.js'
+import { getQuery } from '../../util/util.js';
 
 var isko
 
