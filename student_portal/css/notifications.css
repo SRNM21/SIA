@@ -1,0 +1,65 @@
+@import url("/css/bundle.css");
+
+body, .header 
+{
+    background-color: white;
+}
+
+main
+{
+    height: calc(100dvh - 50px);
+}
+
+.notification-chips
+{
+    min-height: 150px;
+    padding: 16px;
+    display: flex;
+}
+
+.notification-img-wrapper
+{
+    height: 112px;
+    display: block;
+    aspect-ratio: 1/1;
+}
+
+.notification-img-wrapper img 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.notification-body 
+{
+    margin-left: 16px;
+}
+
+.notification-action
+{
+    margin-left: 24px;
+    vertical-align: bottom;
+}
+
+.notification-body-title
+{
+    display: block;
+    font-size: var(--header-h6);
+}
+
+.notification-body-description
+{
+    overflow: hidden;
+}
+
+.notification-body-applicants 
+{
+    display: block;
+    font-size: var(--body-small);
+}
+
+.notification-body-date
+{
+    color: var(--dark-gr-6);
+}

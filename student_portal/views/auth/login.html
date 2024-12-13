@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>PLP Student Portal</title>
+    <link rel='stylesheet' href='/student_portal/css/login.css'>
+    <link rel='shortcut icon' href='/assets/images/PLP_Logo.png' type='image/x-icon'>
+</head>
+<body class='vw-100 vh-100'>
+    <div class='d-flex w-100 h-100 justify-content-center align-items-center p-2 cont'>
+        <div class='d-flex flex-column rounded login-modal overflow-hidden'>
+            <header class='d-flex p-4 gap-4 w-100 h-100'>
+                <span class='logo-wrapper'>
+                    <img src='/assets/images/PLP_Logo.png' alt='PLP Logo'>
+                </span>
+                <div>
+                    <p class='fw-bold plp-name'>PAMANTASAN NG LUNGSOD NG PASIG</p>
+                    <p class='plp-address'>Alkalde Jose St. Kapasigan, Pasig City, Philippines 1600</p>
+                </div>
+            </header>
+            <hr>
+            <main class='d-flex p-4 gap-4 justify-content-center align-items-center flex-column'>
+                <p class='fw-bold webpage-title'>STUDENT PORTAL</p>
+                <div class='w-100 login-form-wrapper'>
+                    <form class='d-flex gap-3 flex-column login-form' action='../student_portal.html'>
+                        <div class='input-group'>
+                            <span class='p-2 fw-bold input-group-text' id='basic-addon1'>#</span>
+                            <input type='text' class='p-2 form-control' id='student-id' placeholder='Student number' aria-label='Student number' aria-describedby='basic-addon1'>
+                        </div>
+
+                        <div class='input-group'>
+                            <input type='password' class='p-2 password-input form-control' id='password-input' placeholder='Password' aria-label='Password' aria-describedby='button-addon2'>
+                            <button class='p-2 toggle-pass-btn hide btn btn-outline-secondary' type='button' id='button-addon2'>
+                                <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#6c757d'><path d='m644-428-58-58q9-47-27-88t-93-32l-58-58q17-8 34.5-12t37.5-4q75 0 127.5 52.5T660-500q0 20-4 37.5T644-428Zm128 126-58-56q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-62-62q41-17 84-25.5t90-8.5q151 0 269 83.5T920-500q-23 59-60.5 109.5T772-302Zm20 246L624-222q-35 11-70.5 16.5T480-200q-151 0-269-83.5T40-500q21-53 53-98.5t73-81.5L56-792l56-56 736 736-56 56ZM222-624q-29 26-53 57t-41 67q50 101 143.5 160.5T480-280q20 0 39-2.5t39-5.5l-36-38q-11 3-21 4.5t-21 1.5q-75 0-127.5-52.5T300-500q0-11 1.5-21t4.5-21l-84-82Zm319 93Zm-151 75Z'/></svg>                            
+                            </button>
+                        </div>
+
+                        <button class='p-2 login-btn btn btn-success' type='submit'>Log in</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script type='text/javascript' src='/vendor/bootstrap.bundle.min.js'></script>
+    <script type='module' src='/student_portal/js/login.js'></script>
+</body>
+</html>

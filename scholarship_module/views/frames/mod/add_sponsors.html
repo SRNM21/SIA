@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link rel='stylesheet' href='/scholarship_module/css/add_sponsors.css'>
+</head>
+<body>
+    <div class='position-sticky top-0 header shadow-sm'>
+        <div class='px-4 py-2 d-flex justify-content-between align-items-center'>
+            <h3>Add Sponsor</h3>
+        </div>
+        <hr>
+    </div>
+    <main class='p-4 d-flex flex-column justify-content-center'>
+        <div class='form-margin d-flex flex-column justify-content-center align-items-center'>
+            <div class='form-wrapper border border-dark-subtle rounded p-4 w-100'>
+                <form class='sponsor-form needs-validation' novalidate>
+                    <div class='mb-3 d-flex w-100 justify-content-center'>
+                        <span class='photo-holder border border-dark-subtle'>
+                            <img id='photo' class='h-100 w-100' src='' alt='' />
+                        </span>
+                    </div>
+                    <div class='mb-3'>
+                        <label for='sponsor-logo' class='form-label required'>Sponsor logo</label>
+                        <input class='form-control' type='file' id='sponsor-logo'>
+                      </div>
+                    <div class='mb-3'>
+                        <label for='sponsor-name' class='form-label required'>Sponsor name</label>
+                        <input type='text' class='form-control' id='sponsor-name' placeholder='Scholarship'>
+                    </div>
+                    <div class='mb-3'>
+                        <label for='sponsor-desc' class='form-label required'>Sponsor description</label>
+                        <textarea class='form-control sponsor-desc' id='sponsor-desc' rows='3' placeholder='Description'></textarea>
+                    </div>
+                    <div class='mb-3'>
+                        <label for='sponsor-req' class='form-label required'>Requirements</label>
+                        
+                        <div class='input-group'>
+                            <input type='text' class='form-control req-item' placeholder='Requirement' aria-label='Requirement' aria-describedby='add-req-btn'>
+                            <button class='btn btn-outline-secondary' type='button' id='add-req-btn'>Add</button>
+                        </div>
+                    </div>
+                    <div class='req-list-wrapper mb-3'></div>
+                    <div class='btn-wrapper d-flex justify-content-end gap-2'>
+                        <a href='../scholarships.html' class='btn btn-secondary'>Cancel</a>
+                        <a href='' class='add-sponsors-btn btn btn-success'>Add Sponsor</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <script type='text/javascript' src='/vendor/bootstrap.bundle.min.js'></script>
+    <script type='module' src='/scholarship_module/js/add_sponsors.js'></script>
+</body>
+</html>

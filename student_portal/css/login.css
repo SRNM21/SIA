@@ -1,0 +1,52 @@
+@import url("/css/bundle.css");
+
+.cont
+{
+    background: url('/assets/images/PLP_BG.webp') var(--mon-green-5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.login-modal, header
+{
+    background-color: white;
+}
+
+.logo-wrapper img
+{
+    height: 54px;
+    width: 54px;
+}
+
+.plp-name
+{
+    font-size: var(--header-h6);
+}
+
+.webpage-title
+{
+    font-size: var(--body-large);
+}
+
+.login-form input:focus
+{
+    border: 1px solid black;
+    box-shadow: none !important;
+}
+
+.toggle-pass-btn svg
+{
+    transition: all 0.25s ease-in-out;
+}
+
+.toggle-pass-btn:hover
+{
+    svg
+    {
+        fill: white;
+    }
+
+    transition: all 0.25s ease-in-out;
+}

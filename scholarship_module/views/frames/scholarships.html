@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link rel='stylesheet' href='/scholarship_module/css/scholarships.css'>
+</head>
+<body class=''>
+    <div class='position-sticky top-0 header'>
+        <div class='px-4 py-2 shadow-sm d-flex justify-content-between align-items-center'>
+            <h3>Scholarships</h3>
+            <span>
+                <a href='./mod/add_sponsors.html' class='add-sponsors-btn p-2 rounded'>
+                    <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#000000'><path d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/></svg>
+                    Add sponsors
+                </a>
+            </span>
+        </div>
+        <hr>
+        <div class='p-4 d-flex justify-content-between align-items-center'>
+            <p>Total Scholarships: <strong class='scholarship-no'></strong></p>
+            <div class='dropdown'>
+                <button class='scholarship-filter-parent btn btn-outline-success dropdown-toggle' type='button' data-bs-toggle='dropdown' aria-expanded='false'>
+                    Available
+                </button>
+                <ul class='dropdown-menu'>
+                    <li><a class='scholarship-filter-dd dropdown-item' href='#'>Available</a></li>
+                    <li><a class='scholarship-filter-dd dropdown-item' href='#'>Archive</a></li>
+                    <li><a class='scholarship-filter-dd dropdown-item' href='#'>Trash</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main class='px-4 pb-4 d-flex flex-fill flex-column'>
+        <div class='h-100 w-100 overflow-scroll'>
+            <div class='d-flex flex-column w-100 scholarship-chips-wrapper gap-4 '></div>
+        </div>
+    </main>
+      
+    <script type='text/javascript' src='/vendor/bootstrap.bundle.min.js'></script>
+    <script type='module' src='/scholarship_module/js/scholarships.js'></script>
+
+</body>
+</html>

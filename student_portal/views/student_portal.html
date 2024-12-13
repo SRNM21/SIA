@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Student Portal</title>
+    <link rel='stylesheet' href='/student_portal/css/student_portal.css'>
+    <link rel='shortcut icon' href='/assets/images/PLP_Logo.png' type='image/x-icon'>
+</head>
+<body class='d-flex flex-column'>
+    <header class='d-flex w-100 border-bottom align-items-center'>
+        <div class='d-flex justify-content-center align-items-center p-2 gap-2 brief-desc'>
+            <span class='p-2 hamburger'>
+                <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#FFFFFF'><path d='M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z'/></svg>
+            </span>
+            <a href='' class='d-flex flex-row gap-3 rounded align-items-center nav-list'>
+                <div class='plp-logo'>
+                    <img src='/assets/images/PLP_Logo.png' alt=''>
+                </div>
+                <p>PLP Student Portal</p>
+            </a>
+        </div>
+    </header>
+
+    <div class='d-flex flex-fill content'>
+        <nav class='d-flex flex-column gap-2 overflow-hidden side-bar collapse'>
+            <div class='d-flex flex-column w-100 h-100 justify-content-between overflow-hidden'>
+                <div class='d-flex flex-column overflow-hidden p-2'>
+                    <button id='nav-scholarships' class='d-flex flex-row p-2 gap-3 w-100 align-items-center rounded overflow-hidden nav-list active'>
+                        <span class='d-flex justify-content-center align-items-center'>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#FFFFFF'><path d='M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z'/></svg>
+                        </span>
+                        <span class='overflow-hidden nav-text'>
+                            <p>Scholarships</p>
+                        </span>
+                    </button>
+                    <button id='nav-grade-report' class='d-flex flex-row p-2 gap-3 w-100 align-items-center rounded overflow-hidden nav-list'>
+                        <span class='d-flex justify-content-center align-items-center'>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#FFFFFF'><path d='M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z'/></svg>
+                        </span>
+                        <span class='overflow-hidden nav-text'>
+                            <p>Grade Report</p>
+                        </span>
+                    </button>
+                    <button id='nav-status' class='d-flex flex-row p-2 gap-3 w-100 align-items-center rounded overflow-hidden nav-list'>
+                        <span class='d-flex justify-content-center align-items-center'>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-40 360-160H200q-33 0-56.5-23.5T120-240v-560q0-33 23.5-56.5T200-880h560q33 0 56.5 23.5T840-800v560q0 33-23.5 56.5T760-160H600L480-40Zm0-440q58 0 99-41t41-99q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41ZM200-240h560v-46q-54-53-125.5-83.5T480-400q-83 0-154.5 30.5T200-286v46Z"/></svg>
+                        </span>
+                        <span class='overflow-hidden nav-text'>
+                            <p>Status</p>
+                        </span>
+                    </button>
+                    <button id='nav-notifications-report' class='d-flex flex-row p-2 gap-3 w-100 align-items-center rounded overflow-hidden nav-list'>
+                        <span class='d-flex justify-content-center align-items-center position-relative'>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                1
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </span>
+                        <span class='overflow-hidden nav-text'>
+                            <p>Notifications</p>
+                        </span>
+                    </button>
+                </div>
+                <div class='p-2'>
+                    <button id='nav-logout' class='d-flex flex-row p-2 gap-3 w-100 rounded overflow-hidden nav-list' data-bs-toggle='modal' data-bs-target='#logout-modal'>
+                        <span class='d-flex justify-content-center align-items-center'>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#FFFFFF'><path d='M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z'/></svg>
+                        </span>
+                        <span class='overflow-hidden nav-text'>
+                            <p>Logout</p>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <main class='d-flex flex-fill flex-column'>
+            <iframe src='./frames/scholarship_app.html' class='h-100 frame-holder' frameborder='0'></iframe>
+        </main>
+    </div>
+
+    <!-- LOGOUT MODAL -->
+    <div class='modal fade' tabindex='-1' id='logout-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Log out</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <p>Are you sure you want to log out?</p>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='btn btn-outline-secondary' data-bs-dismiss='modal'>Cancel</button>
+                    <a href='./auth/login.html' class='btn btn-danger logout-btn'>Log out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- APPLY MODAL -->
+    <div class='modal fade' tabindex='-1' id='apply-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Apply for Scholarship</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <p>Apply for <span class='apply-title fw-semibold'></span> as?</p>
+                </div>
+                <div class='modal-footer d-flex'>
+                    <button type='button' class='apply-modal-renew btn flex-fill btn-outline-success' data-bs-dismiss='modal'>Renewal</button>
+                    <button type='button' class='apply-modal-new btn flex-fill btn-success logout-btn' data-bs-dismiss='modal'>New Applicant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REQUIREMENTS MODAL -->
+    <div class='modal fade' tabindex='-1' id='req-modal' data-bs-backdrop='static'>
+        <div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Requirements</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <div class='p-3 d-flex'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#000000'><path d='M320-280q17 0 28.5-11.5T360-320q0-17-11.5-28.5T320-360q-17 0-28.5 11.5T280-320q0 17 11.5 28.5T320-280Zm0-160q17 0 28.5-11.5T360-480q0-17-11.5-28.5T320-520q-17 0-28.5 11.5T280-480q0 17 11.5 28.5T320-440Zm0-160q17 0 28.5-11.5T360-640q0-17-11.5-28.5T320-680q-17 0-28.5 11.5T280-640q0 17 11.5 28.5T320-600Zm120 320h240v-80H440v80Zm0-160h240v-80H440v80Zm0-160h240v-80H440v80ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <h6 class='fw-semibold'><span class='apply-title'></span> requirements for a <span class='apply-type'></span></h6>
+                            <ul class='mt-2 px-3 req-list'>
+                                <li>Post a notice to all students about this decision</li>
+                                <li>Alternative options</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='btn btn-outline-secondary' data-bs-dismiss='modal'>Close</button>
+                    <button type='button' class='apply-now-modal-btn btn btn-success' data-bs-dismiss='modal'>Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- APPLY SUCCESS MODAL -->
+    <div class='modal fade' tabindex='-1' id='apply-success-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Applied Successfully</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <p>You successfully applied to <span class='apply-title fw-semibold'></span></p>
+                </div>
+                <div class='modal-footer d-flex'>
+                    <button type='button' class='apply-ok-btn flex-fill btn btn-outline-success' data-bs-dismiss='modal'>OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WITHDRAW MODAL -->
+    <div class='modal fade' tabindex='-1' id='withdraw-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Withdraw Application</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <div class='alert alert-warning d-flex' role='alert'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#664d03'><path d='m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <p class=''> Unexpected bad things will happen if you don't read this! </p>
+                        </div>
+                    </div>
+                    <div class='p-3 d-flex'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='black'><path d='M240-360h280l80-80H240v80Zm0-160h240v-80H240v80Zm-80-160v400h280l-80 80H80v-560h800v120h-80v-40H160Zm756 212q5 5 5 11t-5 11l-36 36-70-70 36-36q5-5 11-5t11 5l48 48ZM520-120v-70l266-266 70 70-266 266h-70ZM160-680v400-400Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <h6 class='fw-semibold'>This will remove your application to '<span class='applicant-applied'></span>'</h6>
+                            <p>Before withdrawing, Please consider:</p>
+                            <ul class='ps-3'>
+                                <li>You will be removed from applicant list</li>
+                                <li>You can still send an application after the decision</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='withdraw-confirm-btn btn btn-outline-danger w-100' data-bs-dismiss='modal'>I understand, withdraw application</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- WITHDRAW SUCCESS MODAL -->
+    <div class='modal fade' tabindex='-1' id='withdraw-success-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Withdraw Successfully</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <p>You successfully withdraw to <span class='apply-title fw-semibold'></span></p>
+                </div>
+                <div class='modal-footer d-flex'>
+                    <button type='button' class='withdraw-ok-btn flex-fill btn btn-outline-success' data-bs-dismiss='modal'>OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- APPLICANTS MODAL -->
+    <div class='modal fade' id='applicant-details-modal' tabindex='-1' aria-labelledby='applicant-details-modal-label' aria-hidden='true'>
+        <div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h1 class='modal-title fs-5 fw-bold applicant-modal-no' id='applicant-details-modal-label'>Applicant</h1>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body d-flex flex-column gap-3'>
+                    <h5 class='fw-semibold'>Personal Information</h5>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Name</p>
+                            <p class='applicant-modal-name'></p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Student ID</p>
+                            <p class='applicant-modal-id'></p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Nationality</p>
+                            <p class='applicant-modal-nationality'>Filipino</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Citizenship</p>
+                            <p class='applicant-modal-citizenship'>Filipino</p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Gender</p>
+                            <p class='applicant-modal-gender'>Male</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Civil Status</p>
+                            <p class='applicant-modal-civil'>Single</p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Birthdate</p>
+                            <p class='applicant-modal-bdate'>January 1, 2004</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Application Date</p>
+                            <p class='applicant-modal-app'></p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Contact Number</p>
+                            <p class='applicant-modal-cn'>09123456789</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Email</p>
+                            <p class='applicant-modal-email'>John_doe@gmail.com</p>
+                        </span>
+                    </div>
+                    <hr>
+                    <h5 class='fw-semibold'>Family Information</h5>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Mother</p>
+                            <p class='applicant-modal-mother'>Sisa, Marites B.</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Father</p>
+                            <p class='applicant-modal-father'>Tanggol, Rigor B.</p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Mother's occupation</p>
+                            <p class='applicant-modal-m-occupation'>House Wife</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Father's occupation</p>
+                            <p class='applicant-modal-f-occupation'>Police</p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Mother's contact number</p>
+                            <p class='applicant-modal-m-cn'>09987654321</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Father's contact number</p>
+                            <p class='applicant-modal-f-cn'>09789456123</p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Number of Siblings</p>
+                            <p class='applicant-modal-no-siblings'>2</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Family's Annual Income</p>
+                            <p class='applicant-modal-fam-annual'>100,000</p>
+                        </span>
+                    </div>
+                    <hr>
+                    <h5 class='fw-semibold'>Educational Background</h5>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Course</p>
+                            <p class='applicant-modal-course'></p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Year</p>
+                            <p class='applicant-modal-year'></p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Senior High School</p>
+                            <p class='applicant-modal-shs'>RESPSCI</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>High School</p>
+                            <p class='applicant-modal-hs'>Eusebio High School</p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Elementary</p>
+                            <p class='applicant-modal-elem'>Napico Elementary School</p>
+                        </span>
+                    </div>
+                    <hr>
+                    <h5 class='fw-semibold'>Documents</h5>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Proof of Enrollment</p>
+                            <p class='applicant-modal-enrollment-proof'></p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Grade Report</p>
+                            <p class='applicant-modal-grade-report'></p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Income Proof</p>
+                            <p class='applicant-modal-income-proof'></p>
+                        </span>
+                    </div>
+                </div>                
+                <div class='modal-footer gap-2'>
+                    <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='/vendor/bootstrap.bundle.min.js'></script>
+    <script type='module' src='../js/student_portal.js'></script>
+</body>
+</html>

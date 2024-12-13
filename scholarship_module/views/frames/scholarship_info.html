@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link rel='stylesheet' href='/scholarship_module/css/scholarship_info.css'>
+</head>
+<body>
+    <div class='position-sticky top-0 z-3 header shadow-sm'>
+        <div class='px-4 py-2 d-flex justify-content-between'>
+            <div class='gap-2 d-flex align-items-center'>
+                <a href='/scholarship_module/views/frames/scholarships.html' class='h3 m-0 prev-breadcrumbs'>Scholarships</a>
+                <h3>/</h3>
+                <h3 class='scholarship-name'></h3>
+            </div>
+            <div class=''>
+                <div class='dropdown'>
+                    <button class='btn btn-sm dropdown-toggle' type='button' data-bs-toggle='dropdown' aria-expanded='false'>
+                        Actions
+                    </button>
+                    <ul class='actions-dd dropdown-menu'></ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <main class='p-4 flex w-100 d-flex flex-column position-fixed'>
+        <div class='d-flex justify-content-between align-items-center'>
+            <div class='scholarship-info'>
+                <h4 class='scholarship-name-info d-flex align-items-center'></h4>
+                <p class='scholarship-scholars fw-bold text-success'></p>
+            </div>
+            <div class='search-bar-wrapper'>
+                <div class='input-group'>
+                    <input type='text' class='search-bar form-control' placeholder='Search scholar' aria-label='Search scholars' aria-describedby='button-addon2'>
+                    <button class='search-bar-btn btn btn-outline-success' type='button' id='button-addon2'>
+                        <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#198754'><path d='M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z'/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class='d-flex gap-2 mt-3'>
+            <div class='dropdown'>
+                <button class='course-dd-parent btn btn-outline-success rounded dropdown-toggle' type='button' data-bs-toggle='dropdown' aria-expanded='false'>
+                    All Course
+                </button>
+                <ul class='dropdown-menu'>
+                    <li><a class='course-dd dropdown-item' href='#'>All Course</a></li>
+                    <li><a class='course-dd dropdown-item' href='#'>Bachelor in Elementary Education</a></li>
+                    <li><a class='course-dd dropdown-item' href='#'>Bachelor in Secondary Education</a></li>
+                    <li><a class='course-dd dropdown-item' href='#'>Bachelor of Science in Nursing</a></li>
+                    <li><a class='course-dd dropdown-item' href='#'>Bachelor of Science in Electronics Engineering</a></li>
+                    <li><a class='course-dd dropdown-item' href='#'>Bachelor of Science in Information Technology</a></li>
+                    <li><a class='course-dd dropdown-item' href='#'>Bachelor of Science in Computer Science</a></li>
+                    <li><a class='course-dd dropdown-item' href='#'>Bachelor of Science in Hospitality Management</a></li>
+                </ul>
+            </div>
+            <div class='dropdown'>
+                <button class='year-dd-parent btn btn-outline-success rounded dropdown-toggle' type='button' data-bs-toggle='dropdown' aria-expanded='false'>
+                    All Year Level
+                </button>
+                <ul class='dropdown-menu'>
+                    <li><a class='year-dd dropdown-item' href='#'>All Year Level</a></li> 
+                    <li><a class='year-dd dropdown-item' href='#'>1st Year</a></li> 
+                    <li><a class='year-dd dropdown-item' href='#'>2nd Year</a></li> 
+                    <li><a class='year-dd dropdown-item' href='#'>3rd Year</a></li> 
+                    <li><a class='year-dd dropdown-item' href='#'>4th Year</a></li> 
+                </ul>
+            </div>
+        </div>
+        <div class='table-limiter my-4 d-flex'>
+            <div class='table-wrapper flex-fill'>
+                <table class='scholars-table table table-hover table-striped table-bordered flex-fill '>
+                    <thead class='position-sticky top-0'>
+                        <tr class='table-success'>
+                            <th scope='col'>#</th>
+                            <th scope='col'>Student ID</th>
+                            <th scope='col'>Name</th>
+                            <th scope='col'>Course</th>
+                            <th scope='col'>Year Level</th>
+                            <th scope='col'>Grade</th>
+                            <th scope='col'>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class='scholars-table-body '></tbody>
+                </table>
+            </div>
+        </div>
+        <div class='d-flex justify-content-between align-items-center'>
+            <span>
+                <p id='showing-text'>Showing 1 to 10 of 20 entries</p>
+            </span>
+            <span>
+                <div class='btn-group' role='group' aria-label='Basic outlined example'>
+                    <button type='button' id='prev-btn' class='btn btn-outline-success'>Previous</button>
+                    <div id='current-page' class='entry-number p-2'>1</div>
+                    <button type='button' id='next-btn' class='btn btn-outline-success'>Next</button>
+                </div>
+            </span>
+        </div>
+    </main>
+    
+    <script type='text/javascript' src='/vendor/bootstrap.bundle.min.js'></script>
+    <script type='module' src='/scholarship_module/js/scholarship_info.js'></script>
+</body>
+</html>

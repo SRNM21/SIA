@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Scholarship Module</title>
+    <link rel='stylesheet' href='/scholarship_module/css/scholar_view.css'>
+    <link rel='shortcut icon' href='/assets/images/PLP_Logo.png' type='image/x-icon'>
+</head>
+<body class='d-flex flex-column'>
+    <header class='d-flex w-100 border-bottom align-items-center'>
+        <div class='d-flex justify-content-center align-items-center p-2 gap-2 brief-desc'>
+            <span class='p-2 hamburger'>
+                <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#FFFFFF'><path d='M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z'/></svg>
+            </span>
+            <a href='' class='d-flex flex-row gap-3 rounded align-items-center nav-list'>
+                <div class='plp-logo'>
+                    <img src='/assets/images/PLP_Logo.png' alt=''>
+                </div>
+                <p>Scholarship Module</p>
+            </a>
+        </div>
+    </header>
+
+    <div class='d-flex flex-fill content'>
+        <nav class='d-flex flex-column gap-2 overflow-hidden side-bar collapse'>
+            <div class='d-flex flex-column w-100 h-100 justify-content-between overflow-hidden'>
+                <div class='d-flex flex-column overflow-hidden p-2'>
+                    <button id='nav-dashboard' class='d-flex flex-row p-2 gap-3 w-100 align-items-center rounded overflow-hidden nav-list active'>
+                        <span class='d-flex justify-content-center align-items-center'>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#FFFFFF'><path d='M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z'/></svg>
+                        </span>
+                        <span class='overflow-hidden nav-text'>
+                            <p>Dashboard</p>
+                        </span>
+                    </button>
+                    <button id='nav-scholarships' class='d-flex flex-row p-2 gap-3 w-100 align-items-center rounded overflow-hidden nav-list'>
+                        <span class='d-flex justify-content-center align-items-center'>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#FFFFFF'><path d='M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z'/></svg>
+                        </span>
+                        <span class='overflow-hidden nav-text'>
+                            <p>Scholarships</p>
+                        </span>
+                    </button>
+                    <button id='nav-scholars' class='d-flex flex-row p-2 gap-3 w-100 align-items-center rounded overflow-hidden nav-list'>
+                        <span class='d-flex justify-content-center align-items-center'>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M320-160q-33 0-56.5-23.5T240-240v-120h120v-90q-35-2-66.5-15.5T236-506v-44h-46L60-680q36-46 89-65t107-19q27 0 52.5 4t51.5 15v-55h480v520q0 50-35 85t-85 35H320Zm120-200h240v80q0 17 11.5 28.5T720-240q17 0 28.5-11.5T760-280v-440H440v24l240 240v56h-56L510-514l-8 8q-14 14-29.5 25T440-464v104ZM224-630h92v86q12 8 25 11t27 3q23 0 41.5-7t36.5-25l8-8-56-56q-29-29-65-43.5T256-684q-20 0-38 3t-36 9l42 42Zm376 350H320v40h286q-3-9-4.5-19t-1.5-21Zm-280 40v-40 40Z"/></svg>
+                        </span>
+                        <span class='overflow-hidden nav-text'>
+                            <p>Scholars</p>
+                        </span>
+                    </button>
+                    <button id='nav-applicants' class='d-flex flex-row p-2 gap-3 w-100 align-items-center rounded overflow-hidden nav-list'>
+                        <span class='d-flex justify-content-center align-items-center'>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#FFFFFF'><path d='M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z'/></svg>
+                        </span>
+                        <span class='overflow-hidden nav-text'>
+                            <p>Applicants</p>
+                        </span>
+                    </button>
+                </div>
+                <div class='p-2'>
+                    <button id='nav-logout' class='d-flex flex-row p-2 gap-3 w-100 rounded overflow-hidden nav-list' data-bs-toggle='modal' data-bs-target='#logout-modal'>
+                        <span class='d-flex justify-content-center align-items-center'>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#FFFFFF'><path d='M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z'/></svg>
+                        </span>
+                        <span class='overflow-hidden nav-text'>
+                            <p>Logout</p>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <main class='d-flex flex-fill flex-column'>
+            <iframe src='/scholarship_module/views/frames/dashboard.html' class='frame-holder' frameborder='0'></iframe>
+        </main>
+    </div>
+
+    <!-- LOGOUT MODAL -->
+    <div class='modal fade' tabindex='-1' id='logout-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Log out</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <p>Are you sure you want to log out?</p>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='btn btn-outline-secondary' data-bs-dismiss='modal'>Cancel</button>
+                    <a href='./auth/scholar_login.html' class='btn btn-danger logout-btn'>Log out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCHOLARS MODAL -->
+    <div class='modal fade' id='scholars-details-modal' tabindex='-1' aria-labelledby='scholars-details-modal-label' aria-hidden='true'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h1 class='modal-title fs-5 fw-bold scholars-modal-no' id='scholars-details-modal-label'>Applicant</h1>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body d-flex flex-column gap-3'>
+                    <div class='d-flex justify-content-between'>
+                        <span>
+                            <p class='fw-bold'>Name</p>
+                            <p class='scholars-modal-name'></p>
+                        </span>
+                        <span>
+                            <p class='fw-bold'>Student ID</p>
+                            <p class='scholars-modal-id'></p>
+                        </span>
+                    </div>
+                    <span>
+                        <p class='fw-bold'>Course</p>
+                        <p class='scholars-modal-course'></p>
+                    </span>
+                    <div class='d-flex justify-content-between'>
+                        <span>
+                            <p class='fw-bold'>Application Date</p>
+                            <p class='scholars-modal-app'></p>
+                        </span>
+                        <span>
+                            <p class='fw-bold'>Official Scholar Date</p>
+                            <p class='scholars-modal-scholar'></p>
+                        </span>
+                    </div>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- APPLICANTS MODAL -->
+    <div class='modal fade' id='applicant-details-modal' tabindex='-1' aria-labelledby='applicant-details-modal-label' aria-hidden='true'>
+        <div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h1 class='modal-title fs-5 fw-bold applicant-modal-no' id='applicant-details-modal-label'>Applicant</h1>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body d-flex flex-column gap-3'>
+                    <h5 class='fw-semibold'>Personal Information</h5>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Name</p>
+                            <p class='applicant-modal-name'></p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Student ID</p>
+                            <p class='applicant-modal-id'></p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Nationality</p>
+                            <p class='applicant-modal-nationality'>Filipino</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Citizenship</p>
+                            <p class='applicant-modal-citizenship'>Filipino</p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Gender</p>
+                            <p class='applicant-modal-gender'>Male</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Civil Status</p>
+                            <p class='applicant-modal-civil'>Single</p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Birthdate</p>
+                            <p class='applicant-modal-bdate'>January 1, 2004</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Application Date</p>
+                            <p class='applicant-modal-app'></p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Contact Number</p>
+                            <p class='applicant-modal-cn'>09123456789</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Email</p>
+                            <p class='applicant-modal-email'>John_doe@gmail.com</p>
+                        </span>
+                    </div>
+                    <hr>
+                    <h5 class='fw-semibold'>Family Information</h5>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Mother</p>
+                            <p class='applicant-modal-mother'>Sisa, Marites B.</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Father</p>
+                            <p class='applicant-modal-father'>Tanggol, Rigor B.</p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Mother's occupation</p>
+                            <p class='applicant-modal-m-occupation'>House Wife</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Father's occupation</p>
+                            <p class='applicant-modal-f-occupation'>Police</p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Mother's contact number</p>
+                            <p class='applicant-modal-m-cn'>09987654321</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Father's contact number</p>
+                            <p class='applicant-modal-f-cn'>09789456123</p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Number of Siblings</p>
+                            <p class='applicant-modal-no-siblings'>2</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Family's Annual Income</p>
+                            <p class='applicant-modal-fam-annual'>100,000</p>
+                        </span>
+                    </div>
+                    <hr>
+                    <h5 class='fw-semibold'>Educational Background</h5>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Course</p>
+                            <p class='applicant-modal-course'></p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Year</p>
+                            <p class='applicant-modal-year'></p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Senior High School</p>
+                            <p class='applicant-modal-shs'>RESPSCI</p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>High School</p>
+                            <p class='applicant-modal-hs'>Eusebio High School</p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Elementary</p>
+                            <p class='applicant-modal-elem'>Napico Elementary School</p>
+                        </span>
+                    </div>
+                    <hr>
+                    <h5 class='fw-semibold'>Documents</h5>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Proof of Enrollment</p>
+                            <p class='applicant-modal-enrollment-proof'></p>
+                        </span>
+                        <span>
+                            <p class='fw-semibold'>Grade Report</p>
+                            <p class='applicant-modal-grade-report'></p>
+                        </span>
+                    </div>
+                    <div class='d-flex applicant-modal-detail-row'>
+                        <span>
+                            <p class='fw-semibold'>Income Proof</p>
+                            <p class='applicant-modal-income-proof'></p>
+                        </span>
+                    </div>
+                </div>                
+                <div class='modal-footer gap-2'>
+                    <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button>
+                    <button type='button' class='applicant-decline-btn btn btn-danger' data-bs-dismiss='modal'>Decline</button>
+                    <button type='button' class='applicant-accept-btn btn btn-success' data-bs-dismiss='modal'>Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACCEPT APPLICANT MODAL -->
+    <div class='modal fade' tabindex='-1' id='applicant-accept-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Accept Applicant</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <div class='alert alert-warning d-flex' role='alert'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#664d03'><path d='m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <p class=''> Unexpected bad things will happen if you don't read this! </p>
+                        </div>
+                    </div>
+                    <div class='p-3 d-flex'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='black'><path d='M240-360h280l80-80H240v80Zm0-160h240v-80H240v80Zm-80-160v400h280l-80 80H80v-560h800v120h-80v-40H160Zm756 212q5 5 5 11t-5 11l-36 36-70-70 36-36q5-5 11-5t11 5l48 48ZM520-120v-70l266-266 70 70-266 266h-70ZM160-680v400-400Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <h6 class='fw-semibold'>This will approve '<span class='applicant-name'></span>' application to '<span class='applicant-applied'></span>'</h6>
+                            <p>The student will receive:</p>
+                            <ul class='ps-3'>
+                                <li>Scholarship allowance</li>
+                                <li>Notifications about the scholarship sponsor</li>
+                                <li>Activities/Events from the sponsor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='applicant-accept-confirm-btn btn btn-outline-success w-100' data-bs-dismiss='modal'>I understand, accept the applicant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- APPROVED APPLICANT MODAL -->
+    <div class='modal fade' tabindex='-1' id='approved-applicant-sponsor-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>New Scholar</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <p><strong class='applicant-name'></strong> has been accepted to <strong class='applicant-applied'></strong> successfully.</p>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='approved-applicant-ok-btn btn btn-success' data-bs-dismiss='modal'>OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- DECLINE APPLICANT MODAL -->
+    <div class='modal fade' tabindex='-1' id='applicant-decline-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Decline Applicant</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <div class='alert alert-warning d-flex' role='alert'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#664d03'><path d='m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <p class=''> Unexpected bad things will happen if you don't read this! </p>
+                        </div>
+                    </div>
+                    <div class='p-3 d-flex'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='black'><path d='M240-360h280l80-80H240v80Zm0-160h240v-80H240v80Zm-80-160v400h280l-80 80H80v-560h800v120h-80v-40H160Zm756 212q5 5 5 11t-5 11l-36 36-70-70 36-36q5-5 11-5t11 5l48 48ZM520-120v-70l266-266 70 70-266 266h-70ZM160-680v400-400Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <h6 class='fw-semibold'>This will remove the application of '<span class='applicant-name'></span>' to '<span class='applicant-applied'></span>'</h6>
+                            <p>Before declining, Please consider:</p>
+                            <ul class='ps-3'>
+                                <li>Application will be removed from the list</li>
+                                <li>Notify the student about the decision</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='applicant-decline-confirm-btn btn btn-outline-danger w-100' data-bs-dismiss='modal'>I understand, decline the applicant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DECLINED APPLICANT MODAL -->
+    <div class='modal fade' tabindex='-1' id='declined-applicant-sponsor-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Declined Applicant</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <p><strong class='applicant-name'></strong> has been declined to <strong class='applicant-applied'></strong> successfully.</p>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='declined-applicant-ok-btn btn btn-success' data-bs-dismiss='modal'>OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADD SPONSOR MODAL -->
+    <div class='modal fade' tabindex='-1' id='add-sponsor-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Added Successfully</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <p>New scholarship sponsor has been added.</p>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='add-sponsor-ok-btn btn btn-success' data-bs-dismiss='modal'>OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EDIT SPONSOR MODAL -->
+    <div class='modal fade' tabindex='-1' id='edit-sponsor-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Edited Successfully</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <p class='edit-modal-p'></p>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='edit-sponsor-ok-btn btn btn-success' data-bs-dismiss='modal'>OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ARCHIVE SPONSOR MODAL -->
+    <div class='modal fade' tabindex='-1' id='archive-sponsor-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Archive repository</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <div class='alert alert-warning d-flex' role='alert'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#664d03'><path d='m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <h6 class='fw-semibold'>This scholarship sponsor will become unavailable to students</h6>
+                            <p class='mt-2'>Archiving a scholarship sponsor will make it unavailable to students, Please ensure this action is intentional and consider its impact on the students before proceeding.</p>
+                        </div>
+                    </div>
+                    <div class='p-3 d-flex'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='black'><path d='M240-360h280l80-80H240v80Zm0-160h240v-80H240v80Zm-80-160v400h280l-80 80H80v-560h800v120h-80v-40H160Zm756 212q5 5 5 11t-5 11l-36 36-70-70 36-36q5-5 11-5t11 5l48 48ZM520-120v-70l266-266 70 70-266 266h-70ZM160-680v400-400Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <h6 class='fw-semibold'>Before you archive, please consider:</h6>
+                            <ul class='mt-2 px-3'>
+                                <li>Post a notice to all students about this decision</li>
+                                <li>Alternative options</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='modal-footer d-flex flex-column'>
+                    <div class='mb-3 w-100'>
+                        <label for='modal-confirm-inp' class='form-label required'>Please type '<strong class='modal-sponsor-name'></strong>'' to confirm.</label>
+                        <input type='text' class='form-control' id='modal-confirm-inp'>
+                    </div>
+                    <button type='button' class='archive-confirm-sponsor-btn btn btn-outline-danger w-100' data-bs-dismiss='modal'>I understand the consequences, archive this sponsor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ARCHIVE SUCCESS MODAL -->
+    <div class='modal fade' tabindex='-1' id='archive-sponsor-success-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Archived Successfully</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <p class='archive-modal-p'></p>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='archive-sponsor-ok-btn btn btn-success' data-bs-dismiss='modal'>OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESTORE SPONSOR MODAL -->
+    <div class='modal fade' tabindex='-1' id='restore-sponsor-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Restore repository</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <div class='alert alert-warning d-flex' role='alert'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#664d03'><path d='m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <p class=''> Unexpected bad things will happen if you don't read this! </p>
+                        </div>
+                    </div>
+                    <div class='p-3 d-flex'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='black'><path d='M240-360h280l80-80H240v80Zm0-160h240v-80H240v80Zm-80-160v400h280l-80 80H80v-560h800v120h-80v-40H160Zm756 212q5 5 5 11t-5 11l-36 36-70-70 36-36q5-5 11-5t11 5l48 48ZM520-120v-70l266-266 70 70-266 266h-70ZM160-680v400-400Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <h6 class='fw-semibold'>This will make '<span class='restore-name'></span>' available</h6>
+                            <p>Once restored, the following can be done:</p>
+                            <ul class='ps-3'>
+                                <li>Students can apply</li>
+                                <li>Sponsor's information can be modify</li>
+                                <li>Sponsor's requirements can be modify</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='modal-footer d-flex flex-column'>
+                    <div class='mb-3 w-100'>
+                        <label for='modal-confirm-inp' class='form-label required'>Please type '<strong class='modal-sponsor-name'></strong>'' to confirm.</label>
+                        <input type='text' class='form-control' id='modal-restore-inp'>
+                    </div>
+                    <button type='button' class='restore-confirm-sponsor-btn btn btn-outline-danger w-100' data-bs-dismiss='modal'>I understand the consequences, restore this sponsor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESTORE SUCCESS MODAL -->
+    <div class='modal fade' tabindex='-1' id='restore-sponsor-success-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Restored Successfully</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <p class='restore-modal-p'></p>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='restore-sponsor-ok-btn btn btn-success' data-bs-dismiss='modal'>OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- DELETE SPONSOR MODAL -->
+    <div class='modal fade' tabindex='-1' id='delete-sponsor-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Move to trash</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <div class='d-flex flex-column justify-content-center align-items-center'>
+                        <span class='delete-icon-holder'>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M479-120 189-279v-240L40-600l439-240 441 240v317h-60v-282l-91 46v240L479-120Zm0-308 315-172-315-169-313 169 313 172Zm0 240 230-127v-168L479-360 249-485v170l230 127Zm1-240Zm-1 74Zm0 0Z"/></svg>
+                        </span>
+                        <h4 class='sponsor-name-holder'></h4>
+                    </div>
+                    <div class='mt-3 d-flex flex-column justify-content-center align-items-center'>
+                        <span class='d-flex gap-2'>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M320-160q-33 0-56.5-23.5T240-240v-120h120v-90q-35-2-66.5-15.5T236-506v-44h-46L60-680q36-46 89-65t107-19q27 0 52.5 4t51.5 15v-55h480v520q0 50-35 85t-85 35H320Zm120-200h240v80q0 17 11.5 28.5T720-240q17 0 28.5-11.5T760-280v-440H440v24l240 240v56h-56L510-514l-8 8q-14 14-29.5 25T440-464v104ZM224-630h92v86q12 8 25 11t27 3q23 0 41.5-7t36.5-25l8-8-56-56q-29-29-65-43.5T256-684q-20 0-38 3t-36 9l42 42Zm376 350H320v40h286q-3-9-4.5-19t-1.5-21Zm-280 40v-40 40Z"/></svg>
+                            <p><span class='delete-sponsor-scholars-holder'></span> Scholars</p>
+                        </span>
+                    </div>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='w-100 delete-sponsor-ok-btn btn btn-outline-danger' data-bs-dismiss='modal'>Proceed to deleting this sponsor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DELETE PHASE 2 SPONSOR MODAL -->
+    <div class='modal fade' tabindex='-1' id='delete-proceed-sponsor-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Move to trash</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <div class='d-flex flex-column justify-content-center align-items-center'>
+                        <span class='delete-icon-holder'>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M479-120 189-279v-240L40-600l439-240 441 240v317h-60v-282l-91 46v240L479-120Zm0-308 315-172-315-169-313 169 313 172Zm0 240 230-127v-168L479-360 249-485v170l230 127Zm1-240Zm-1 74Zm0 0Z"/></svg>
+                        </span>
+                        <h4 class='sponsor-name-holder'></h4>
+                    </div>
+                    <div class='mt-3 d-flex flex-column justify-content-center align-items-center'>
+                        <span class='d-flex gap-2'>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M320-160q-33 0-56.5-23.5T240-240v-120h120v-90q-35-2-66.5-15.5T236-506v-44h-46L60-680q36-46 89-65t107-19q27 0 52.5 4t51.5 15v-55h480v520q0 50-35 85t-85 35H320Zm120-200h240v80q0 17 11.5 28.5T720-240q17 0 28.5-11.5T760-280v-440H440v24l240 240v56h-56L510-514l-8 8q-14 14-29.5 25T440-464v104ZM224-630h92v86q12 8 25 11t27 3q23 0 41.5-7t36.5-25l8-8-56-56q-29-29-65-43.5T256-684q-20 0-38 3t-36 9l42 42Zm376 350H320v40h286q-3-9-4.5-19t-1.5-21Zm-280 40v-40 40Z"/></svg>
+                            <p><span class='delete-sponsor-scholars-holder'></span> Scholars</p>
+                        </span>
+                    </div>
+                    <hr class='my-3'>
+                    <div class='alert alert-warning d-flex' role='alert'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#664d03'><path d='m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <p class=''> Unexpected bad things will happen if you don't read this! </p>
+                        </div>
+                    </div>
+                    <div class='p-3 d-flex'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='black'><path d='M240-360h280l80-80H240v80Zm0-160h240v-80H240v80Zm-80-160v400h280l-80 80H80v-560h800v120h-80v-40H160Zm756 212q5 5 5 11t-5 11l-36 36-70-70 36-36q5-5 11-5t11 5l48 48ZM520-120v-70l266-266 70 70-266 266h-70ZM160-680v400-400Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <h6 class='fw-semibold'>Before you delete, please consider:</h6>
+                            <ul class='ps-3'>
+                                <li>This will move '<strong class='sponsor-name-holder'></strong>' sponsor to trash</li>
+                                <li>All Students/Scholars applied for this scholarship will be removed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='modal-footer d-flex flex-column'>
+                    <div class='mb-3 w-100'>
+                        <label for='modal-delete-inp' class='form-label required'>Please type '<strong class='modal-sponsor-name'></strong>' to confirm.</label>
+                        <input type='text' class='form-control' id='modal-delete-inp'>
+                    </div>
+                    <button type='button' class='w-100 delete-proceed-confirm-sponsor-btn btn btn-outline-danger w-100' data-bs-dismiss='modal'>I understand the consequences, move this sponsor to trash</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- DELETE PERMANENTLY  -->
+    <div class='modal fade' tabindex='-1' id='perma-rem-sponsor-modal'>
+        <div class='modal-dialog modal-dialog-centered'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Remove permanently</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <div class='d-flex flex-column justify-content-center align-items-center'>
+                        <span class='delete-icon-holder'>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M479-120 189-279v-240L40-600l439-240 441 240v317h-60v-282l-91 46v240L479-120Zm0-308 315-172-315-169-313 169 313 172Zm0 240 230-127v-168L479-360 249-485v170l230 127Zm1-240Zm-1 74Zm0 0Z"/></svg>
+                        </span>
+                        <h4 class='sponsor-name-holder'></h4>
+                    </div>
+                    <div class='mt-3 d-flex flex-column justify-content-center align-items-center'>
+                        <span class='d-flex gap-2'>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M320-160q-33 0-56.5-23.5T240-240v-120h120v-90q-35-2-66.5-15.5T236-506v-44h-46L60-680q36-46 89-65t107-19q27 0 52.5 4t51.5 15v-55h480v520q0 50-35 85t-85 35H320Zm120-200h240v80q0 17 11.5 28.5T720-240q17 0 28.5-11.5T760-280v-440H440v24l240 240v56h-56L510-514l-8 8q-14 14-29.5 25T440-464v104ZM224-630h92v86q12 8 25 11t27 3q23 0 41.5-7t36.5-25l8-8-56-56q-29-29-65-43.5T256-684q-20 0-38 3t-36 9l42 42Zm376 350H320v40h286q-3-9-4.5-19t-1.5-21Zm-280 40v-40 40Z"/></svg>
+                            <p>0 Scholars</p>
+                        </span>
+                    </div>
+                    <hr class='my-3'>
+                    <div class='alert alert-warning d-flex' role='alert'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#664d03'><path d='m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <p class=''> Unexpected bad things will happen if you don't read this! </p>
+                        </div>
+                    </div>
+                    <div class='p-3 d-flex'>
+                        <span>
+                            <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='black'><path d='M240-360h280l80-80H240v80Zm0-160h240v-80H240v80Zm-80-160v400h280l-80 80H80v-560h800v120h-80v-40H160Zm756 212q5 5 5 11t-5 11l-36 36-70-70 36-36q5-5 11-5t11 5l48 48ZM520-120v-70l266-266 70 70-266 266h-70ZM160-680v400-400Z'/></svg>
+                        </span>
+                        <div class='ms-3'>
+                            <h6 class='fw-semibold'>Before you delete, please consider:</h6>
+                            <ul class='ps-3'>
+                                <li>This will permanently remove '<strong class='sponsor-name-holder'></strong>' from sponsors</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='modal-footer d-flex flex-column'>
+                    <div class='mb-3 w-100'>
+                        <label for='perma-rem-inp' class='form-label required'>Please type '<strong class='modal-sponsor-name'></strong>' to confirm.</label>
+                        <input type='text' class='form-control' id='perma-rem-inp'>
+                    </div>
+                    <button type='button' class='w-100 perma-rem-sponsor-btn btn btn-outline-danger w-100' data-bs-dismiss='modal'>I understand the consequences, remove this sponsor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type='text/javascript' src='/vendor/bootstrap.bundle.min.js'></script>
+    <script type='module' src='/scholarship_module/js/scholarship_module.js'></script>
+</body>
+</html>

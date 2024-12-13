@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link rel='stylesheet' href='/student_portal/css/application_form.css'>
+</head>
+<body>
+    <div class='position-sticky top-0 z-3 header shadow-sm'>
+        <div class='px-4 py-2 gap-2 d-flex'>
+            <a href='./scholarship_app.html' class='h3 m-0 prev-breadcrumbs'>Scholarships</a>
+            <h3>/</h3>
+            <h3 class='app-form-title'></h3>
+        </div>
+        <hr>
+    </div>
+    <main class='p-4 flex w-100 d-flex flex-column position-fixed'>
+        <div class='position-relative h-100 d-flex flex-column'>
+            <nav aria-label='breadcrumb'>
+                <ol class='breadcrumb'>
+                    <li class='breadcrumb-item'><a href='#personal-info'>Personal information</a></li>
+                    <li class='breadcrumb-item'><a href='#family-info'>Family Information</a></li>
+                    <li class='breadcrumb-item'><a href='#educational-bg'>Educational Background</a></li>
+                    <li class='breadcrumb-item'><a href='#upload-doc'>Upload Documents</a></li>
+                </ol>
+            </nav>
+            <div class='w-100 h-100 gap-2 d-flex position-relative flex-column parent-div'>
+                <div class='h-100 w-100 gap-2 d-flex position-relative'>
+                    <div class='w-100 position-relative'>
+                        <div class='w-100 h-100'>
+                            <div class='w-100 h-100 gap-4 position-relative d-flex section-list'>
+                                <section id='personal-info' class='w-100'>
+                                    <div class='w-100 d-flex flex-column'>
+                                        <div class='d-flex w-100 gap-4 mt-3'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='surname' class='form-label'>Surname</label>
+                                                <input type='text' class='form-control' id='surname' placeholder='E.g. Doe'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='firstname' class='form-label'>Firstname</label>
+                                                <input type='text' class='form-control' id='firstname' placeholder='E.g. John'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='middlename' class='form-label'>Middlename</label>
+                                                <input type='text' class='form-control' id='middlename' placeholder='E.g. Peter'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='suffix' class='form-label'>Suffix</label>
+                                                <input type='text' class='form-control' id='suffix' placeholder='E.g. Jr., Sr.'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='birthdate' class='form-label'>Birthdate</label>
+                                                <input type='date' class='form-control' id='birthdate' placeholder='name@example.com'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='gender' class='form-label'>Gender</label>
+                                                <select name='gender' id='gender' class='form-control'>
+                                                    <option selected disabled>Select Gender</option>
+                                                    <option value='male'>Male</option>
+                                                    <option value='female'>Female</option>
+                                                </select>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='contact-number' class='form-label'>Contact Number</label>
+                                                <input type='email' class='form-control' id='contact-number' placeholder='E.g. 09123456789'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='age' class='form-label'>Age</label>
+                                                <input type='text' class='form-control' id='age' placeholder='E.g. 19'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='email-add' class='form-label'>Email Address</label>
+                                                <input type='email' class='form-control' id='email-add' placeholder='name@example.com'>
+                                            </div>
+
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='nationality' class='form-label'>Nationality</label>
+                                                <input type='text' class='form-control' id='nationality' placeholder='E.g. Filipino'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='citizenship' class='form-label'>Citizenship</label>
+                                                <input type='text' class='form-control' id='citizenship' placeholder='E.g. Filipino'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='suffix' class='form-label'>Civil Status</label>
+                                                <select name='gender' id='gender' class='form-control'>
+                                                    <option selected disabled>Select Civil Status</option>
+                                                    <option value='single'>Single</option>
+                                                    <option value='married'>Married</option>
+                                                    <option value='divorced'>Divorced</option>
+                                                    <option value='separated'>Separated</option>
+                                                    <option value='widowed'>Widowed</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='add1' class='form-label'>Address Line 1</label>
+                                                <input type='text' class='form-control' id='add1' placeholder='E.g. 123 Apple st'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='add2' class='form-label'>Address Line 2</label>
+                                                <input type='text' class='form-control' id='add2' placeholder='E.g. 123 Mango st'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='city' class='form-label'>City</label>
+                                                <input type='text' class='form-control' id='city' placeholder='E.g. Pasig'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='barangay' class='form-label'>Barangay</label>
+                                                <input type='text' class='form-control' id='barangay' placeholder='E.g. Rosario'>
+                                            </div>
+
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='zip' class='form-label'>Zip Code</label>
+                                                <input type='text' class='form-control' id='zip' placeholder='E.g. 1611'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4 justify-content-end'>
+                                            <button class='personal-info-next-btn btn btn-success'>Next</button>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id='family-info' class='w-100'>
+                                    <div class='w-100 d-flex flex-column'>
+                                        <div class='d-flex w-100 gap-4 mt-3'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='f-surname' class='form-label'>Father's name</label>
+                                                <input type='text' class='form-control' id='f-surname' placeholder='Surname'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='f-firstname' class='form-label'></label>
+                                                <input type='text' class='form-control' id='f-firstname' placeholder='Firstname'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='f-middlename' class='form-label'></label>
+                                                <input type='text' class='form-control' id='f-middlename' placeholder='Middlename'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='f-suffix' class='form-label'></label>
+                                                <input type='text' class='form-control' id='f-suffix' placeholder='Suffix'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='f-occupation' class='form-label'>Occupation</label>
+                                                <input type='text' class='form-control' id='f-occupation' placeholder='E.g. Police'>
+                                            </div>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='f-contact-no' class='form-label'>Contact Number</label>
+                                                <input type='text' class='form-control' id='f-contact-no' placeholder='E.g. 09123456789'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='m-surname' class='form-label'>Mother's maiden name</label>
+                                                <input type='text' class='form-control' id='m-surname' placeholder='Surname'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='m-firstname' class='form-label'></label>
+                                                <input type='text' class='form-control' id='m-firstname' placeholder='Firstname'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='m-middlename' class='form-label'></label>
+                                                <input type='text' class='form-control' id='m-middlename' placeholder='Middlename'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='m-suffix' class='form-label'></label>
+                                                <input type='text' class='form-control' id='m-suffix' placeholder='Suffix'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='m-occupation' class='form-label'>Occupation</label>
+                                                <input type='email' class='form-control' id='suffix' placeholder='E.g. House Wife'>
+                                            </div>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='m-contact-no' class='form-label'>Contact Number</label>
+                                                <input type='email' class='form-control' id='suffix' placeholder='E.g. 09123456789'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='g-surname' class='form-label'>Guardian's name</label>
+                                                <input type='text' class='form-control' id='g-surname' placeholder='Surname'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='g-firstname' class='form-label'></label>
+                                                <input type='text' class='form-control' id='g-firstname' placeholder='Firstname'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='g-middlename' class='form-label'></label>
+                                                <input type='text' class='form-control' id='g-middlename' placeholder='Middlename'>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='g-suffix' class='form-label'></label>
+                                                <input type='text' class='form-control' id='g-suffix' placeholder='Suffix'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='g-occupation' class='form-label'>Occupation</label>
+                                                <input type='text' class='form-control' id='g-occupation' placeholder='E.g. Police'>
+                                            </div>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='g-contact-no' class='form-label'>Contact Number</label>
+                                                <input type='text' class='form-control' id='g-contact-no' placeholder='E.g. 09123456789'>
+                                            </div>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='relationship' class='form-label'>Relationship</label>
+                                                <input type='text' class='form-control' id='relationship' placeholder='E.g. 09123456789'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='no-sibling' class='form-label'>No. of Siblings</label>
+                                                <input type='text' class='form-control' id='no-sibling' placeholder='E.g. 2'>
+                                            </div>
+
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='fam-annual' class='form-label'>Family's Annual Income</label>
+                                                <input type='text' class='form-control' id='fam-annual' placeholder='E.g. 100,000'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4 justify-content-end'>
+                                            <button class='family-info-next-btn btn btn-success'>Next</button>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id='educational-bg' class='w-100'>
+                                    <div class='w-100 d-flex flex-column'>
+                                        <div class='d-flex w-100 gap-4 mt-3'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='course' class='form-label'>Course</label>
+                                                <select name='course' id='course' class='form-control'>
+                                                    <option selected disabled>Select Course</option>
+                                                    <option value='BEE'>Bachelor in Elementary Education</option>
+                                                    <option value='BSE'>Bachelor in Secondary Education</option>
+                                                    <option value='BSN'>Bachelor of Science in Nursing</option>
+                                                    <option value='BSEE'>Bachelor of Science in Electronics Engineering</option>
+                                                    <option value='BSIT'>Bachelor of Science in Information Technology</option>
+                                                    <option value='BSCS'>Bachelor of Science in Computer Science</option>
+                                                    <option value='BSHM'>Bachelor of Science in Hospitality Management</option>
+                                                </select>
+                                            </div>
+    
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='year' class='form-label'>Year</label>
+                                                <select name='year' id='year' class='form-control'>
+                                                    <option selected disabled>Select Year</option>
+                                                    <option value='1'>1st Year</option>
+                                                    <option value='2'>2nd Year</option>
+                                                    <option value='3'>3rd Year</option>
+                                                    <option value='4'>4th Year</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='prev' class='form-label'>Senior High School</label>
+                                                <input type='text' class='form-control' id='prev' placeholder='E.g. Eusebio High School'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='prev' class='form-label'>High School</label>
+                                                <input type='text' class='form-control' id='prev' placeholder='E.g. Eusebio High School'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='prev' class='form-label'>Elementary School</label>
+                                                <input type='text' class='form-control' id='prev' placeholder='E.g. Napico Elementary School'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4 justify-content-end'>
+                                            <button class='educational-bg-next-btn btn btn-success'>Next</button>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id='upload-doc' class='w-100'>
+                                    <div class='w-100 d-flex flex-column'>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='prev' class='form-label'>Proof of Enrollment</label>
+                                                <input type='file' class='form-control'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='prev' class='form-label'>Grade Report</label>
+                                                <input type='file' class='form-control'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='prev' class='form-label'>Income Proof</label>
+                                                <input type='file' class='form-control'>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4'>
+                                            <div class='flex-fill inp-gr'>
+                                                <label for='prev' class='form-label'>Essay</label>
+                                                <textarea class='form-control sponsor-desc' id='sponsor-desc' rows='3' placeholder='Description'></textarea>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex w-100 gap-4 mt-4 justify-content-end'>
+                                            <button class='submit-btn btn btn-success'>Submit</button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </main>
+    
+    <script type='text/javascript' src='/vendor/bootstrap.bundle.min.js'></script>
+    <script type='module' src='/student_portal/js/application_form.js'></script>
+</body>
+</html>

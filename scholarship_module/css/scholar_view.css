@@ -1,0 +1,49 @@
+@import url("/css/root.css");
+@import url("/css/component/header.css");
+@import url("/css/component/nav_bar.css");
+
+/* MAIN SECTION*/
+
+main
+{
+    background-color: var(--gray-gr-3);
+    max-width: 100%;
+}
+
+.frame-holder 
+{
+    height: calc(100dvh - 64px);
+}
+
+.modal-sponsor-name
+{
+    user-select: none;
+}
+
+.delete-icon-holder
+{
+    height: 48px;
+    width: 48px;
+}
+
+.delete-icon-holder svg
+{
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.modal-footer > *
+{
+    margin: 0 ;
+}
+
+.applicant-modal-detail-row
+{
+    flex-basis: 0;
+}
+
+.applicant-modal-detail-row > span
+{
+    flex: 1;
+}

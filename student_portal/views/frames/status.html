@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link rel='stylesheet' href='/student_portal/css/status.css'>
+</head>
+<body>
+    <div class='position-sticky top-0 header shadow-sm'>
+        <div class='px-4 py-2 shadow-sm d-flex'>
+            <h3 class='d-flex justify-content-center align-items-center'>Academic Scholar Status <span class='badge text-bg-warning ms-3'>In Progress</span></h3>
+        </div>
+        <hr>
+    </div>
+    <main class='p-4 w-100 pb-4 d-flex flex-fill flex-column position-fixed'>
+        <div class='alert alert-success' role='alert'>
+            Thank you for completing your scholarship application. We appreciate your interest and effort. Your submission has been successfully received and is currently under review. You will be notified of the decision once the evaluation process is complete
+        </div>
+        <div class='flex-fill d-flex'>
+            <div class='p-4 border border-secondary-subtle rounded scholar-info-card text-center'>
+                <span class='scholar-img-wrapper mb-3'>
+                    <img class='scholar-img' src='' alt=''>
+                </span>
+                <h4 class='scholar-title fw-semibold'></h4>
+                <div class='btn-wrapper d-flex flex-column gap-2 mt-3'>
+                    <button class='open-btn btn btn-success'>Open Application</button>
+                    <button class='withdraw-btn btn btn-outline-danger'>Withdraw Application</button>
+                </div>
+            </div>
+            <div class='ms-3 border border-secondary-subtle rounded flex-fill bot-wrapper'>
+                <div class='d-flex p-4 gap-4'>
+                    <div class='flex-fill inp-gr'>
+                        <label for='suffix' class='form-label'>Financial</label>
+                        <input type='text' class='form-control' disabled value='Waiting for Approval'>
+                    </div>
+                    <div class='flex-fill inp-gr'>
+                        <label for='suffix' class='form-label'>Interview</label>
+                        <input type='text' class='form-control' disabled value='Waiting for Approval'>
+                    </div>
+                    <div class='flex-fill inp-gr'>
+                        <label for='suffix' class='form-label'>Interviewed by</label>
+                        <input type='text' class='form-control' disabled value='Waiting for Approval'>
+                    </div>
+                </div>
+                <div class='d-flex p-4 gap-4'>
+                    <div class='flex-fill inp-gr'>
+                        <label for='suffix' class='form-label'>Academic GWA</label>
+                        <input type='text' class='form-control' disabled value='Waiting for Approval'>
+                    </div>
+                    <div class='flex-fill inp-gr'>
+                        <label for='suffix' class='form-label'>Values Education / ESP</label>
+                        <input type='text' class='form-control' disabled value='Waiting for Approval'>
+                    </div>
+                    <div class='flex-fill inp-gr'>
+                        <label for='suffix' class='form-label'>Checked / Assessed by</label>
+                        <input type='text' class='form-control' disabled value='Waiting for Approval'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script type='text/javascript' src='/vendor/bootstrap.bundle.min.js'></script>
+    <script type='module' src='/student_portal/js/status.js'></script>
+</body>
+</html>

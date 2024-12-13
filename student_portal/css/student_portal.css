@@ -1,0 +1,19 @@
+@import url("/css/bundle.css");
+
+/* MAIN SECTION*/
+
+main
+{
+    background-color: var(--gray-gr-3);
+    max-width: 100%;
+}
+
+.applicant-modal-detail-row
+{
+    flex-basis: 0;
+}
+
+.applicant-modal-detail-row > span
+{
+    flex: 1;
+}

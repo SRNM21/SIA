@@ -1,0 +1,57 @@
+@import url("/css/root.css");
+@import url("/css/component/header.css");
+@import url("/css/component/nav_bar.css");
+
+body, .header
+{
+    background-color: white;
+}
+
+.form-wrapper
+{
+    width: 50% !important;
+}
+
+.sponsor-desc
+{
+    max-height: 200px;
+}
+
+.required::after
+{
+    content: '*';
+    color: red;
+    margin-left: 16px;
+}
+
+.req-list
+{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.req-remove-btn
+{
+    cursor: pointer;
+}
+
+.req-remove-btn svg
+{
+    transition: all 0.15s ease-in-out;
+}
+
+.req-remove-btn:hover svg
+{
+    fill: black;
+}
+
+.invalid-field
+{
+    border: 1px red solid !important
+}
+
+.photo-holder
+{
+    height: 126px !important;
+    width: 126px !important;
+}

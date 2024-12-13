@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("/vendor/bootstrap.min.css");
+
+/** FOR DEBUGGING */
+
+.debug
+{
+    border: 1px solid red;
+}
+
+.debug0
+{
+    background-color: red;
+}
+
+.debug1
+{
+    background-color: green;
+}
+
+.debug2
+{
+    background-color: blue;
+}
+
+.debug3
+{
+    background-color: yellow;
+}
+
+/** ROOT STYLES */
+
+*
+{
+    box-sizing: border-box !important;
+    font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+    scroll-behavior: smooth !important;
+}
+
+p, h1, h2, h3, h4, h5, h6, hr
+{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+html 
+{
+	width: 100% !important; 
+	height: 100% !important;
+}
+
+body
+{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    background-color: var(--white);
+}
+
+p
+{
+    font-size: var(--body-medium);
+}
+
+:root
+{
+    /** HEADER TEXT SIZE */
+    --header-h1: 60px;
+    --header-h2: 48px;
+    --header-h3: 40px;
+    --header-h4: 30px;
+    --header-h5: 28px;
+    --header-h6: 24px;
+
+    /** BODY TEXT SIZE */
+    --body-large:   18px;
+    --body-medium:  16px;
+    --body-small:   14px;
+    --body-x-small: 12px;
+
+    /** COLORS */
+    --dark-gr-1:        #111928;
+    --dark-gr-2:        #1F2A37;
+    --dark-gr-3:        #374151;
+    --dark-gr-4:        #4B5563;
+    --dark-gr-5:        #6B7280;
+    --dark-gr-6:        #9CA3AF;
+    --dark-gr-7:        #D1D5DB;
+    --dark-gr-8:        #E5E7EB;
+    
+    --gray-gr-1:        #F9FAFB;
+    --gray-gr-2:        #F3F4F6;
+    --gray-gr-3:        #E5E7EB;
+    --gray-gr-4:        #DEE2E6;
+    --gray-gr-5:        #CED4DA;
+
+    --mon-green-1:      #011c15;
+    --mon-green-2:      #01382A;
+    --mon-green-3:      #01543F;
+    --mon-green-4:      #027054;
+    --mon-green-5:      #028C69;
+    --mon-green-6:      #01A97E;
+    --mon-green-7:      #01C593;
+
+    /** BREAKPOINTS */
+    --bp-mobile-s:  320px;
+    --bp-mobile-m:  375px;
+    --bp-mobile-l:  425px;
+    --bp-tablet:    768px;
+    --bp-laptop:    1024px;
+    --bp-laptop-l:  1440px;
+    --bp-4k:        2560px;
+}
+
+.content 
+{
+    height: calc(100dvh - 64px);
+}
+
+.prev-breadcrumbs
+{
+    text-decoration: none;
+}
+
+.prev-breadcrumbs:hover
+{
+    text-decoration: underline;
+}

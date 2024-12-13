@@ -1,0 +1,78 @@
+@import url("/css/root.css");
+@import url("/css/component/header.css");
+@import url("/css/component/nav_bar.css");
+
+body, .header
+{
+    background-color: white;
+}
+
+main
+{
+    height: calc(100dvh - 50px);
+}
+
+.dash
+{
+    height: 300px;
+    flex-grow: 1;
+    flex-basis: 0;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.dash span
+{
+    background-color: var(--mon-green-3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.30s ease-in-out;
+}
+
+.dash:hover span
+{
+    scale: 1.1;
+}
+
+.dash-total-sponsors
+{
+    background-image: url('/assets/images/sponsors.jpg');
+}
+
+.dash-total-scholars
+{
+    background-image: url('/assets/images/scholars.jpg');
+}
+
+.dash-total-applicants
+{
+    background-image: url('/assets/images/applicants.jpg');
+}
+
+.dash-no
+{
+    font-size: var(--header-h1);
+}
+
+.dash-title
+{
+    font-size: var(--header-h5);
+}
+
+.chart-wrapper
+{
+    height: 400px;
+    width: 600px;
+}
+
+.chart-wrapper > div
+{
+    flex: 1;
+}
+
+.chart-line
+{
+    width: 100% !important;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link rel='stylesheet' href='/scholarship_module/css/dashboard.css'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class='px-4 py-2 d-flex align-items-center'>
+        <h3>Dashboard</h3>
+    </div>
+    <hr>
+    <main class='p-4 flex w-100 d-flex flex-column position-fixed overflow-scroll'>
+        <div class='d-flex gap-4'>
+            <a href='./scholarships.html' class='go-to-scholarships dash d-flex rounded position-relative'>
+                <span class='dash-total-sponsors position-absolute h-100 w-100'></span>
+                <div class='p-4 h-100 w-100 position-absolute flex-fill d-flex flex-column text-center justify-content-center'>
+                    <p class='dash-no dash-sponsors-no fw-bold'>0</p>
+                    <p class='dash-title'>Total Scholarship Sponsors</p>
+                </div>
+            </a>
+            <a href='./scholars.html' class='go-to-scholars dash d-flex rounded position-relative'>
+                <span class='dash-total-scholars position-absolute h-100 w-100'></span>
+                <div class='p-4 h-100 w-100 position-absolute flex-fill d-flex flex-column text-center justify-content-center'>
+                    <p class='dash-no dash-scholars-no fw-bold'>0</p>
+                    <p class='dash-title'>Total Scholars</p>   
+                </div>
+            </a>
+            <a href='./applicants.html' class='go-to-applicants dash d-flex rounded position-relative'>
+                <span class='dash-total-applicants position-absolute h-100 w-100'></span>
+                <div class='p-4 h-100 w-100 position-absolute p-4 flex-fill d-flex flex-column text-center justify-content-center'>
+                    <p class='dash-no dash-applicants-no fw-bold'>0</p>
+                    <p class='dash-title'>Total Applicants</p>
+                </div>
+            </a>
+        </div>
+        <div class='flex-fill mt-3'>
+            <div class='position-relative chart-wrapper d-flex w-100 justify-content-between'>
+                <div class='flex-fill w-100'>
+                    <canvas id='chart-line' class='chart-line h-100'></canvas>
+                </div>
+                <div>
+                    
+                    <canvas id='chart-doughnut' class='h-100'></canvas>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type='text/javascript' src='/vendor/bootstrap.bundle.min.js'></script>
+    <script type='module' src='/scholarship_module/js/dashboard.js'></script>
+</body>
+</html>
