@@ -1,62 +1,44 @@
 [
     {
-        "img": "/assets/images/PASIG.png",
-        "name": "ACADEMIC",
-        "message": "Experiential learning methods provide students with opportunities to gain practical knowledge through real-world applications. These methods bridge the gap between theory and practice, equipping learners with problem-solving skills, creativity, and hands-on experience. By engaging in such approaches, students develop a deeper understanding of concepts and build confidence in their abilities.",
+        "img": "/assets/images/PCS.png",
+        "name": "Pasig City Scholarship Office",
+        "message": "Your scholarship allowance for Pasig City Scholar - Academic has been released on December 28, 2024 via LandBank - Cash Card. Please check your account. For questions or issues, contact the Scholarship Office.",
         "date": "2024-12-28"
     },
     {
-        "img": "/assets/images/PASIG.png",
-        "name": "ACADEMIC",
-        "message": "Education is fundamental to societal progress, fostering innovation, critical thinking, and informed citizenship. Through structured learning environments, individuals acquire skills and knowledge that empower them to contribute to their communities. As a transformative force, education plays a pivotal role in reducing inequality, promoting economic growth, and preparing societies to face future challenges.",
+        "img": "/assets/images/PCS.png",
+        "name": "Pasig City Scholarship Office",
+        "message": "Your application for Pasig City Scholar - Academic is on hold due to missing documents. Please upload the following: [1] Proof of Income, [2] Proof of Enrollment, [3] 1x1 Picture by August 23, 2024, to avoid disqualification. For questions or issues, contact the Scholarship Office.",
         "date": "2024-08-19"
     },
     {
-        "img": "/assets/images/PASIG.png",
-        "name": "ACADEMIC",
-        "message": "Experiential learning involves active participation in hands-on activities that reinforce classroom knowledge. This approach enhances engagement and retention by allowing students to apply concepts in real-life scenarios. Whether through internships, simulations, or project-based tasks, experiential learning fosters critical thinking, collaboration, and adaptability, making it an indispensable part of modern education systems.",
+        "img": "/assets/images/PCS.png",
+        "name": "Pasig City Scholarship Office",
+        "message": "We regret to inform you that your application for Pasig City Scholar - Academic was not approved. Due to lack of your documents. You are encouraged to submit your documents on time and reapply for next semester. For questions or issues, contact the Scholarship Office.",
         "date": "2024-04-23"
     },
     {
-        "img": "/assets/images/PASIG.png",
-        "name": "ACADEMIC",
-        "message": "Higher education institutions serve as hubs for innovation and leadership development. By fostering critical inquiry and interdisciplinary research, these institutions prepare students to address global challenges. Universities not only impart knowledge but also cultivate ethical responsibility, cultural awareness, and a commitment to lifelong learning, essential traits for shaping future leaders and change-makers.",
+        "img": "/assets/images/PCS.png",
+        "name": "Pasig City Scholarship Office",
+        "message": "The policy for Pasig City Scholar - Academic has been updated. New requirements include a minimum GPA of 2.75 and a renewal GPA of 2.50. Applications close on May 20, 2024, so please review the changes to maintain your eligibility. For questions or issues, contact the Scholarship Office.",
         "date": "2024-03-11"
     },
     {
-        "img": "/assets/images/PASIG.png",
-        "name": "ACADEMIC",
-        "message": "Scholarship programs play a crucial role in providing educational opportunities to talented individuals from diverse backgrounds. These initiatives reduce financial barriers, enabling students to pursue academic excellence. By investing in scholarships, societies promote social mobility, nurture innovation, and ensure that economic circumstances do not hinder the pursuit of knowledge and personal growth.",
+        "img": "/assets/images/PCS.png",
+        "name": "Pasig City Scholarship Office",
+        "message": " Your application for Pasig City Scholar - Academic is still under review. All submitted documents have been verified, and the next step is awaiting approval. You can expect an update within three working days. For questions or issues, contact the Scholarship Office.",
         "date": "2024-08-28"
     },
     {
-        "img": "/assets/images/PASIG.png",
-        "name": "ACADEMIC",
-        "message": "Experiential learning methods combine traditional education with practical applications, offering students a comprehensive approach to understanding complex subjects. These methods encourage curiosity, teamwork, and a growth mindset. By tackling real-world challenges, students develop problem-solving abilities and confidence, preparing them for successful careers in a rapidly evolving global environment.",
+        "img": "/assets/images/PCS.png",
+        "name": "Pasig City Scholarship Office",
+        "message": "The renewal deadline for Pasig City Scholar - Academic is approaching on June 30, 2024. Ensure all your requirements are completed and submitted on time to continue your scholarship. Late submissions may result in disqualification. For questions or issues, contact the Scholarship Office.",
         "date": "2024-05-17"
     },
     {
-        "img": "/assets/images/PASIG.png",
-        "name": "ACADEMIC",
-        "message": "Promoting arts and humanities enriches societies by fostering creativity, empathy, and cultural awareness. These disciplines help individuals understand human experiences and diversity, encouraging critical reflection and innovation. Supporting arts education not only enhances personal growth but also contributes to community building and the preservation of cultural heritage for future generations.",
+        "img": "/assets/images/PCS.png",
+        "name": "Pasig City Scholarship Officec",
+        "message": "Allowance disbursement for Pasig City Scholar - Academic is experiencing a slight delay. The expected release date is now January 27, 2024. We apologize for the inconvenience and recommend checking your dashboard for further updates. For questions or issues, contact the Scholarship Office.",
         "date": "2024-01-27"
-    },
-    {
-        "img": "/assets/images/PASIG.png",
-        "name": "ACADEMIC",
-        "message": "Online courses have revolutionized education, making quality learning accessible to a global audience. These platforms offer flexibility, affordability, and a diverse range of subjects, enabling students to learn at their own pace. By leveraging technology, online education bridges geographical barriers, empowers lifelong learners, and democratizes access to knowledge for all.",
-        "date": "2024-04-28"
-    },
-    {
-        "img": "/assets/images/PASIG.png",
-        "name": "ACADEMIC",
-        "message": "STEM education is a driving force behind technological advancements and economic growth. By focusing on science, technology, engineering, and mathematics, this educational approach equips students with problem-solving skills and technical expertise. STEM programs inspire innovation, address global challenges, and prepare individuals for careers in rapidly evolving and high-demand industries.",
-        "date": "2024-09-13"
-    },
-    {
-        "img": "/assets/images/PASIG.png",
-        "name": "ACADEMIC",
-        "message": "Public libraries serve as invaluable community resources, providing free access to knowledge and fostering lifelong learning. These institutions support literacy, digital skills, and cultural engagement, ensuring inclusivity and equity. By hosting events and offering diverse materials, libraries empower individuals, bridge information gaps, and strengthen societal bonds across generations.",
-        "date": "2024-10-25"
     }
 ]

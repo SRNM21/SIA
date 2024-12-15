@@ -61,7 +61,7 @@ applicantsBtn.on('click', function()
 
 function setScholars(student)
 {
-    $('.scholars-modal-no').html(`Applicant #${student.index}`)
+    $('.scholars-modal-no').html(`Scholar #${student.index}`)
     $('.scholars-modal-id').html(student.student_id)
     $('.scholars-modal-name').html(student.name)
     $('.scholars-modal-course').html(student.course)

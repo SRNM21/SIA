@@ -1,4 +1,4 @@
-export const studentGrade = 1.25
+export const studentGrade = 1.75
 export const studentApplication = {
     id: 1,
     image: "/assets/images/PASIG.png",

@@ -1,10 +1,11 @@
 import '/vendor/jq.js';
-import { studentApplication } from '../../util/util.js';
+import { studentApplication, studentGrade } from '../../util/util.js';
 
 $(function (e) 
 {  
     $('.scholar-img').attr('src', studentApplication.image)
     $('.scholar-title').html(studentApplication.title)
+    $('.gwa').val(studentGrade)
 })
 
 $('.withdraw-btn').on('click', function (e) 

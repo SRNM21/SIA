@@ -5,7 +5,7 @@
         "title": "Academic",
         "description": "Academic scholarships are merit-based awards granted to students with outstanding academic achievements. These scholarships aim to support high-performing individuals in pursuing their educational goals by covering tuition fees, books, or other expenses. Recipients are selected based on grades, standardized test scores, and exceptional intellectual potential.",
         "status": "Available",
-        "required_grade": 1.25,
+        "required_grade": 2.25,
         "requirements": {
             "new": [
                 "Proof of Enrollment with the current school",
@@ -4314,7 +4314,7 @@
         "title": "Arts and Design",
         "description": "Arts and Design scholarships support talented individuals pursuing creative fields like visual arts, graphic design, fashion, or performing arts. These scholarships recognize artistic excellence and innovation, helping students enhance their skills and achieve their academic and professional goals. Awards often consider portfolios, creativity, and dedication to artistic development.",
         "status": "Available",
-        "required_grade": 1.25,
+        "required_grade": 2.25,
         "requirements": {
             "new": [
                 "Proof of Enrollment with the current school",
@@ -6661,9 +6661,9 @@
         "id": 3,
         "image": "/assets/images/PASIG.png",
         "title": "Board and Bar Examination Review Assistance",
-        "description": "scholarships provide financial support to graduates preparing for licensure exams. These scholarships aim to ease the burden of review costs, enabling recipients to focus on intensive study. Eligibility often includes academic performance and a commitment to professional practice after passing the examination.",
+        "description": "Scholarships provide financial support to graduates preparing for licensure exams. These scholarships aim to ease the burden of review costs, enabling recipients to focus on intensive study. Eligibility often includes academic performance and a commitment to professional practice after passing the examination.",
         "status": "Available",
-        "required_grade": 1.25,
+        "required_grade": 1.50,
         "requirements": {
             "new": [
                 "Application Form",
@@ -11235,7 +11235,7 @@
         "title": "Case Incentives (Latin Honors and Recognitions)",
         "description": "Rewards students for achieving academic excellence through honors or recognition. These incentives often include financial benefits or certificates, acknowledging dedication and exceptional performance in academics.",
         "status": "Available",
-        "required_grade": 1.25,
+        "required_grade": 1.50,
         "requirements": {
             "new": [
                 "Proof of Enrollment with the current school",
@@ -16044,7 +16044,7 @@
         "title": "Chip in",
         "description": "Provides financial assistance through small contributions from multiple donors to help students cover educational expenses. This collaborative approach fosters community support and ensures access to quality education for those in need.",
         "status": "Available",
-        "required_grade": 1.25,
+        "required_grade": 2.50,
         "requirements": {
             "new": [
                 "Proof of Enrollment with the current school",
@@ -18740,7 +18740,7 @@
         "title": "PAGASA",
         "description": "Provides scholarships to students facing financial difficulties caused by natural disasters. This program ensures continuity in education by offering financial aid and support, helping learners overcome challenges and pursue their academic goals despite adverse circumstances.",
         "status": "Available",
-        "required_grade": 1.25,
+        "required_grade": 1.75,
         "requirements": {
             "new": [
                 "Proof of Income / ITR / Affidavit of Non-Filing of ITR",
@@ -23412,7 +23412,7 @@
         "title": "Hyundai",
         "description": "Focuses on supporting students in innovation, engineering, and sustainable development through scholarships. It encourages academic excellence and fosters future leaders in technology and eco-friendly initiatives, promoting a brighter future through education and advancement in critical fields.",
         "status": "Available",
-        "required_grade": 1.25,
+        "required_grade": 2.00,
         "requirements": {
             "new": [
                 "Grade 12 Report Card",
@@ -29858,7 +29858,7 @@
         "title": "Out of School Learner (OSL)",
         "description": "Assists learners who have returned to education after dropping out, providing resources and financial aid to support their journey. It aims to bridge gaps, promote inclusivity, and offer opportunities for personal and academic growth.",
         "status": "Available",
-        "required_grade": 1.25,
+        "required_grade": 2.25,
         "requirements": {
             "new": [
                 "Proof of Enrollment with the current school",
@@ -34737,7 +34737,7 @@
         "title": "Private School - Endorsed (PSE)",
         "description": "Offers scholarships to students recommended by private schools, recognizing their academic potential and character. These awards encourage continued excellence and provide support for those committed to achieving their educational goals in private institutions.",
         "status": "Available",
-        "required_grade": 1.25,
+        "required_grade": 2.25,
         "requirements": {
             "new": [
                 "Proof of Enrollment with the current school",
@@ -37404,7 +37404,7 @@
         "id": 11,
         "image": "/assets/images/PASIG.png",
         "title": "SK Official",
-        "description": "supports student leaders in the Sangguniang Kabataan. It provides financial aid to enhance their education while fostering leadership, community service, and governance skills, empowering them to create a positive impact in their communities and contribute to youth development.",
+        "description": "Supports student leaders in the Sangguniang Kabataan. It provides financial aid to enhance their education while fostering leadership, community service, and governance skills, empowering them to create a positive impact in their communities and contribute to youth development.",
         "status": "Available",
         "required_grade": 1.25,
         "requirements": {
@@ -41573,9 +41573,9 @@
         "id": 12,
         "image": "/assets/images/PASIG.png",
         "title": "Sports Scholar",
-        "description": "assists student-athletes excelling in sports. It provides financial support to pursue higher education while continuing athletic training. This scholarship encourages excellence in both academics and sports, helping students achieve their full potential and promoting discipline, teamwork, and sportsmanship.",
+        "description": "Assists student-athletes excelling in sports. It provides financial support to pursue higher education while continuing athletic training. This scholarship encourages excellence in both academics and sports, helping students achieve their full potential and promoting discipline, teamwork, and sportsmanship.",
         "status": "Available",
-        "required_grade": 1.25,
+        "required_grade": 1.50,
         "requirements": {
             "new": [
                 "Proof of Enrollment with the current school",

@@ -45,7 +45,7 @@ main
 .notification-body-title
 {
     display: block;
-    font-size: var(--header-h6);
+    font-size: var(--body-large);
 }
 
 .notification-body-description
